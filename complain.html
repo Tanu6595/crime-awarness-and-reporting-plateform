@@ -9,6 +9,7 @@
     .flex{
     display: flex;
      gap:16px;
+     
 }
  
 .card1{
@@ -97,11 +98,17 @@ margin-top:20px;
       margin-left: 65px; 
      
      }
-     
+     .h{
+        color: white;
+        font-size: 20px;
+     }
+      
 </style>
 <body>
+    <h1>REPORT YOUR COMPLAIN</h1>
+
     <div class="flex">
-        <div class="card1"> 
+         <div class="card1"> 
             <img class="img-box" src="image.avif">
             <h class="h">Women related crime</h>
             <button id="women_registerButton">Register a Crime</button>
@@ -121,5 +128,16 @@ margin-top:20px;
                                     <button id="crime_registerButton">Register a complaint</button>
                                 
                                    </div>
+                                   <script>
+                                    document.getElementById('women_registerButton').addEventListener('click', function() {
+                                        window.location.href = 'register.html';
+                             });
+                             document.getElementById('finacial_fraud_registerButton').addEventListener('click', function() {
+                                        window.location.href = 'finacial_fraud.html';
+                             });
+                             document.getElementById('crime_registerButton').addEventListener('click', function() {
+                                        window.location.href = 'cyber_crime.html';
+                             });         
+                             </script>    
 </body>
 </html>
