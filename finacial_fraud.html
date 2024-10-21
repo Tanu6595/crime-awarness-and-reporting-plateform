@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Crime Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Financial or Bank-Related Crime Registration</h2>
+        <form id="financialCrimeForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="crimeType">Type of Financial Crime:</label>
+            <select id="crimeType" name="crimeType" required>
+                <option value="">Select Crime Type</option>
+                <option value="fraud">Fraud</option>
+                <option value="identityTheft">Identity Theft</option>
+                <option value="moneyLaundering">Money Laundering</option>
+                <option value="cyberCrime">Cyber Crime</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="bankDetails">Bank Details (if applicable):</label>
+            <input type="text" id="bankDetails" name="bankDetails" placeholder="Account Number, Bank Name, etc.">
+
+            <label for="description">Crime Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="date">Date of Incident:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

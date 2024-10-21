@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register a Complaint</title>
+ 
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Complaint Container */
+.complaint-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Form Styles */
+.complaint-container h2 {
+    margin-bottom: 20px;
+}
+
+.complaint-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.complaint-container input[type="text"],
+.complaint-container select,
+.complaint-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.complaint-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.complaint-container button:hover {
+    background-color: #218838;
+}
+
+</style>
+<body>
+    <div class="complaint-container">
+        <h2>Register a Complaint</h2>
+        <form action="?" method="post">
+            <label for="crime-type">Type of Crime</label>
+            <select id="crime-type" name="crime-type" required>
+                <option value="">Select a crime type</option>
+                <option value="theft">Theft</option>
+                <option value="assault">Assault</option>
+                <option value="fraud">Fraud</option>
+                <option value="harassment">Harassment</option>
+                <option value="vandalism">Vandalism</option>
+                <option value="cybercrime">Cybercrime</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="location">Location of the Crime</label>
+            <input type="text" id="location" name="location" placeholder="Enter the location" required>
+
+            <label for="description">Description of the Incident</label>
+            <textarea id="description" name="description" rows="5" placeholder="Provide details about the incident" required></textarea>
+
+            <label for="contact">Your Contact Information (Optional)</label>
+            <input type="text" id="contact" name="contact" placeholder="Phone or Email (Optional)">
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </div>
+</body>
+</html>

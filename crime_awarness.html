@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+    padding: 0;     
+    box-sizing: border-box;
+    font-weight: 200;
+     
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  
+    
+    
+}
+ 
+ 
+
+
+.logo img {
+    width: 150px;
+    height: 110px;
+    margin-left: 2px;
+}
+.name{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.h1{
+     
+       
+    font-size:30px;
+    font-weight: 200;
+}
+.p{
+    position: relative;
+    top: -20px;
+   
+    font-size:30px;
+    font-weight: 400;
+    }
+ .nav_bar_img2 img{
+    
+    width: 150px;
+    height: 110px;
+
+ }
+ .navbar {
+    background-color:rgba(13, 80, 181, 0.411);
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+    width: 1300px;
+    text-decoration: none;
+    
+   
+}
+
+ 
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+   
+    background-color: rgba(147, 184, 241, 0.411);
+    border: none;
+    width:200px;
+    height: 40px;
+}
+
+.login{
+    color: rgba(10, 10, 11, 0.411);;
+}
+.track{
+    color:rgb(25, 25, 28) ;
+}
+.navbar_content{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin-top: 6px;
+}
+.img3 img{
+    height: 300px;
+    width: 1300px;
+}
+.image-container {
+    position: relative;
+    width: 300px;  
+    height: 300px;  
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:1300px;
+    height:400px;
+    transition: opacity 0.5s;
+}
+.h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(255, 255, 238);
+}
+
+.image-2 {
+    opacity: 0;
+}
+
+.toggle-checkbox:checked ~ .toggle-label .image-1 {
+    opacity: 0;
+}
+
+.toggle-checkbox:checked ~ .toggle-label .image-2 {
+    opacity: 1;
+}
+.flex{
+    display: flex;
+     gap:16px;
+}
+ 
+.card1{
+
+width: 300px;
+ height: 300px;
+ border-radius: 14px;
+border: 5px solid rgb(207, 93, 93);
+margin-top: 120px;
+margin-left: 15px;
+background-color:rgb(208, 107, 107); 
+box-shadow: 5px 10px 8px #acabab 
+
+ 
+}
+.card1:hover{
+     opacity: 0.7;
+}
+ 
+.img-box{
+width:300px;
+height: 200px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+
+
+}
+ 
+button{
+background-color: rgb(35, 196, 225);
+border:none;
+height: 40px;
+width: 170px;
+border-radius: 6px;
+margin-top:20px;
+ margin-left: 65px; 
+ 
+
+
+}
+.card2{
+     
+width: 300px;
+ height: 300px;
+ border-radius: 14px;
+border: 5px solid gray;
+margin-top: 120px;
+box-shadow: 5px 10px 8px #9e9c9c ;
+background-color: gray;
+ 
+}
+.card2:hover{
+    opacity: 0.7;
+     
+}
+ 
+.btn2{
+    background-color: rgb(35, 196, 225);
+    border:none;
+    height: 40px;
+width: 170px;
+border-radius: 6px;
+margin-top:20px;
+ margin-left: 65px; 
+ 
+
+
+}
+.card3{
+     
+     width: 300px;
+      height: 300px;
+      border-radius: 14px;
+     border: 5px solid rgb(28, 28, 77);
+     margin-top: 120px;
+     box-shadow: 5px 10px 8px #8a8888 ;
+
+     background-color:rgb(26, 26, 75);
+      
+     }
+     .card3:hover{
+         opacity: 0.7;
+          
+     }
+      
+     .btn3{
+         background-color: rgb(35, 196, 225);
+         border:none;
+         height: 40px;
+     width: 170px;
+     border-radius: 6px;
+     margin-top:20px;
+      margin-left: 65px; 
+       
+
+
+     
+     }
+     .report-section {
+    background-color:rgb(255, 115, 0);
+    padding: 20px;
+    border-radius: 8px;
+    border-color: rgb(255, 115, 0);
+    width: 300px;
+    height: 270px;
+    margin-top: 120px;
+    box-shadow: 5px 10px 8px #918f8f 
+
+}
+
+.report-section h2 {
+    margin-top:10px;
+    text-align: center;
+}
+ 
+
+.report-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: none;
+}
+
+.btn4 {
+    background-color: rgb(35, 196, 225);
+    border:none;
+     height: 40px;
+     width: 170px;
+     border-radius: 6px;
+     padding: auto;
+     margin-bottom: 5px;
+      margin-left: 65px;
+    
+     
+}
+.img-box1 {
+    width: 150px;
+    height: 110px;
+    margin-left: 350px;
+    
+}
+.Awareness{
+    display: flex;
+    justify-content: space-between;
+     
+    background-color: white;
+    
+}
+.l_name{
+    margin-top: 25px;
+     margin-right: 450px;
+     height: 40px;
+     width: 500px;
+     color: rgb(14, 39, 29);
+}
+.h2{
+     font-size:28px;
+    font-weight: 500;}
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+     width: 90%;
+    margin: 0 auto;
+    background-color: rgb(204, 178, 178);
+    box-shadow: 5px 10px 8px #0e0e0e
+    }
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    width: 250px;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+} 
+.Media{
+    display: flex;
+    justify-content: space-between;
+      background-color: white;
+    
+}
+.l_name1{
+  
+     margin-right: 450px;
+     height: 40px;
+     width: 500px;
+     color: rgb(14, 39, 29);
+}
+.h3{
+     font-size:28px;
+    font-weight: 500;}
+    
+.img-box2 {
+    width: 150px;
+    height: 110px;
+    margin-left: 350px;
+    
+}
+.media{
+    background-color: rgb(247, 240, 231);
+    height: 600px;
+    width: 1300px;
+  
+}
+ .container_media{
+    display: flex;
+     gap:26px;
+}
+
+.card{
+     
+     width: 400px;
+      height: 450px;
+      border-radius: 14px;
+     border: 10px solid rgba(221, 214, 214, 0.772) ;
+     margin-top: 120px;
+     overflow: hidden;  
+      box-shadow: #0e0d0d;
+     background-color:rgb(200, 200, 211);
+     box-shadow: 5px 10px 8px #373737 
+
+      
+     }
+     .card_media2{
+     
+     width: 400px;
+      height: 450px;
+      border-radius: 14px;
+     border: 10px solid rgba(221, 214, 214, 0.772) ;
+     margin-top: 120px;
+     overflow: hidden;  
+      box-shadow: #0e0d0d;
+     background-color:rgb(200, 200, 211);
+     box-shadow: 5px 10px 8px #373737 
+
+      
+     }
+     .card_media1{
+     box-shadow: #0e0d0d;
+     width: 400px;
+      height: 450px;
+      border-radius: 14px;
+     border: 10px solid rgba(221, 214, 214, 0.772) ;
+     margin-top: 120px;
+     background-color:rgb(200, 200, 211);
+     overflow: hidden;  
+     box-shadow: 5px 10px 8px #373737 
+
+     }
+     .img_media-box{
+width:400px;
+height:380px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+     .card:hover{
+         opacity: 0.7;
+          
+     }
+     .card_media1:hover{
+         opacity: 0.7;
+          
+     }
+     .card_media2:hover{
+         opacity: 0.7;
+          
+     }
+     .h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(24, 24, 23);
+}
+.footer {
+    background-color: #f3e0e0;
+    color: #292727;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-link {
+    color: #272424;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #2d2b2b;
+    margin-top: 20px;
+}
+
+.footer-contact strong {
+    font-size: 16px;
+}
+
+</style>
+<body>
+    <header class="header">
+        
+        <div class="logo">
+            <img src="1696920514115.jpg" alt=" Logo">
+        </div>
+        <div class="name">
+           
+         <h class="h1"> राष्ट्रीय  अपराध  रिपोर्टिंग  और  जागरूकता <p>
+      <p class="p">  National Crime Reporting and Awareness</p>
+        </div>
+        </div>
+        <div class="nav_bar_img2">
+            <img src="img2.jpg" alt=" Logo">
+        </div>
+    
+        </header>
+        <nav class="navbar">
+            <div class="navbar_content"> 
+               <a href="home.html"></a>
+            <a href="login.html" style="text-decoration:none">Login</a>
+             
+         
+   <a>
+    <select id="complaintType"   onchange="openPage1()">
+        <option value="complain.html">Select a complaint type</option>
+        <option value="complain.html">Financial/Bank Related Crime</option>
+        <option value="complain.html">Women Related Crime</option>
+       <option value="complain.html">Cyber/Online Fraud</option>
+    </select>
+   </a>
+            <a  class=track href="track.html" style="text-decoration: none;">Track your complaint</a>
+
+             
+                <select id="Learning corner" onchange="openPage2()">
+                    <option value="">Learning corner</option>
+                 <option value="FAQ.html"> FAQ</option>
+                <option value="FAQ.html">CYBER SAFETY TIPS </option>
+                <option value="option2"> CYBER AWARENESS</option>
+                <option value="option2">RECODES </option>
+            </select>
+            <a href="feedback.html" style="text-decoration: none;"> Feedback</a>
+        </div>
+        </nav>
+        <div class="image-container">
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+            <label for="toggle" class="toggle-label">
+                <img src="crime3.jpg" alt="Image 1" class="image image-1">
+                <img src="crime4.jpg" alt="Image 2" class="image image-2">
+            </label>
+        </div>
+        <div class="flex">
+            <div class="card1"> 
+                <img class="img-box" src="image.avif">
+                <h class="h">Women related crime</h>
+                <button id="women_registerButton">Register a Crime</button>
+                </div>
+                
+                 
+            <div class="card2"> 
+                <img class="img-box" src="img6.jpg">
+                <h class="h">Financial related crime</h>
+                <button id="finacial_fraud_registerButton">Register a Crime</button>
+            </div>
+            
+        
+                           <div class="card3"> 
+                            <img class="img-box" src="img7.avif">
+                            <h class="h"> Cyber crime related crime</h>
+                                        <button id="crime_registerButton">Register a complaint</button>
+                                    
+                                       </div>
+                <div class="report-section">
+                    <h2>Report a Problem</h2> 
+                      <textarea id="problem-description" name="problem-description" rows="8" placeholder="Write your problem here..."></textarea>
+                    <button class="btn4">Submit</button>
+                                        
+                 </div>
+     </div>
+<div class="Awareness">
+    <div class="l_logo">
+        <img class="img-box1" src="95990500-gallery-logo-icon.jpg">
+    </div>
+    <div class="l_name">
+          <h class="h2"> __Awareness Gallery__</h> 
+      
+       </div>
+</div>
+<div class="gallery">
+    <div class="gallery-item"><img src="image1.jpg" alt="Image 1"></div>
+    <div class="gallery-item"><img src="image2.png" alt="Image 2"></div>
+    <div class="gallery-item"><img src="image3.jpeg" alt="Image 3"></div>
+    <div class="gallery-item"><img src="image4.jpg" alt="Image 4"></div>
+    <div class="gallery-item"><img src="image5.jpeg" alt="Image 5"></div>
+    <div class="gallery-item"><img src="images6.png" alt="Image 6"></div>
+    <div class="gallery-item"><img src="images7.png" alt="Image 7"></div>
+    <div class="gallery-item"><img src="image8.jpg" alt="Image 8"></div>
+    <div class="gallery-item"><img src="image9.jpg" alt="Image 9"></div>
+    <div class="gallery-item"><img src="image10.jpg" alt="Image 10"></div>
+    <div class="gallery-item"><img src="image11.jpg_large" alt="Image 11"></div>
+    <div class="gallery-item"><img src="images12.jpeg" alt="Image 12"></div>
+    <div class="gallery-item"><img src="images13.jpeg" alt="Image 13"></div>
+    <div class="gallery-item"><img src="images14.jpeg" alt="Image 14"></div>
+    <div class="gallery-item"><img src="image15.png" alt="Image 15"></div>
+    <div class="gallery-item"><img src="images16.jpeg" alt="Image 16"></div>
+    <div class="gallery-item"><img src="image17.jpeg" alt="Image 17"></div>
+    <div class="gallery-item"><img src="image19.webp" alt="Image 18"></div>
+    <div class="gallery-item"><img src="image18.avif" alt="Image 19"></div>
+    <div class="gallery-item"><img src="image20.png" alt="Image 20"></div>
+</div>
+<div class="Awareness">
+    <div class="l_logo">
+        <img class="img-box1" src="media.webp">
+    </div>
+    <div class="l_name">
+          <h class="h2"> __Media__</h> 
+      
+       </div>
+        
+</div>
+<div class="media">
+<div class="media_content">
+    <div class="container_media">
+        
+        <div class="card"  id="newsCard"> 
+            <img class="img_media-box" src="news paper.webp" alt="News Paper">
+            <h6 class="h6"> NEWS Paper Articles</h6>
+        </div>
+    
+        
+        <div class="card_media1" id="ytubeCard"> 
+            <img class="img_media-box" src="yt.avif" alt="YouTube Video">
+            <h6 class="h6">Video</h6>
+        </div>
+            
+           <div class="card_media2" id="socialcard"> 
+            <img class="img_media-box" src="social media.avif">
+            <h class="h6"></h>
+ </div>
+    
+    
+</div>
+
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 CrimeWatch | All Rights Reserved</p>
+        <p>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a> | 
+            <a href="terms_and_condition.html" class="footer-link">Terms of Service</a> | 
+            <a href="/contact-us" class="footer-link">Contact Us</a>
+        </p>
+        <p>Stay informed and help your community. Report crimes anonymously and securely through our platform. Together, we can make a safer world.</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>facebook
+
+            </a>
+            <a href="https://www.twitter.com" target="_blank"> 
+                <i class="fab fa-twitter"></i>
+                twitter
+            </a>
+             <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"> </i>
+                instagram
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"> </i>linkedin
+                </a>
+        </div>
+
+        <div class="footer-contact">
+            <p><strong>Need Help?</strong></p>
+            <p>Call: <a href="tel:1-800-CRIME-STOP" class="footer-link">1-800-CRIME-STOP</a></p>
+            <p>Email: <a href="mailto:support@crimewatch.com" class="footer-link">support@crimewatch.com</a></p>
+            <p>Address: 123 Safety St, Safe City, SC 12345</p>
+        </div>
+
+        <p class="disclaimer">Disclaimer: The information provided on this platform is for public safety purposes only. CrimeWatch is not responsible for any legal actions taken based on the reports or information shared.</p>
+    </div>
+</footer>
+
+  
+       <script>
+        document.getElementById('women_registerButton').addEventListener('click', function() {
+            window.location.href = 'register.html';
+ });
+ document.getElementById('finacial_fraud_registerButton').addEventListener('click', function() {
+            window.location.href = 'finacial_fraud.html';
+ });
+ document.getElementById('crime_registerButton').addEventListener('click', function() {
+            window.location.href = 'cyber_crime.html';
+ });
+ function openPage1() {
+            var page = document.getElementById("complaintType").value;
+            if (page) {
+                window.location.href = page;  
+            }
+ }
+ function openPage2() {
+            var page = document.getElementById("Learning corner").value;
+            if (page) {
+                window.location.href = page;  
+            }
+ }
+ document.getElementById('newsCard').addEventListener('click', function() {
+            window.location.href = 'newspaper.html';   
+        });
+
+        document.getElementById('ytubeCard').addEventListener('click', function() {
+            window.location.href = 'videos.html';   
+        });
+        
+        document.getElementById('socialcard').addEventListener('click', function() {
+            window.location.href = 'socialmedia.html';   
+        });
+
+</script>
+    </body>
+</html>
+

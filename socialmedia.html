@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <style>
+       
+       .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 40px; 
+            padding: 20px;
+        }
+
+         .image-grid img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+         
+        @media (max-width: 600px) {
+            .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));  
+            }
+        } 
+    </style>
+</head>
+<body>
+<h1>Some social media posts:</h1>
+    <div class="image-grid">
+         <img src="socialimg1.jpeg" alt="Image 1">
+        <img src="socialimg8.jpeg" alt="Image 2">
+        <img src="socialimg7.png" alt="Image 3">
+        <img src="socialimg2.jpeg" alt="Image 4">
+        <img src="socialimg3.jpg" alt="Image 5">
+        <img src="socialimg4.jpg_large" alt="Image 6">
+        <img src="socialimg6.jpeg" alt="Image 7">
+        <img src="socialimg5.png" alt="Image 8">
+        <img src="socialimg12.jpeg" alt="Image 9">
+        <img src="socialimg10.jpg_large" alt="Image 10">
+        <img src="socialimg9.jpeg" alt="Image 11">
+        <img src="socialimg11.jpeg" alt="Image 9">
+         
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232F3E;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #FF9900;
+    border: none;
+    cursor: pointer;
+}
+
+.user-options span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #37475A;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #B12704;
+}
+
+.product button {
+    padding: 5px 10px;
+    background-color: #FF9900;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #232F3E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="user-options">
+            <span>Hello, Sign in</span>
+            <span>Orders</span>
+            <span>Cart</span>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li>Best Sellers</li>
+            <li>Today's Deals</li>
+            <li>Customer Service</li>
+            <li>New Releases</li>
+            <li>Books</li>
+            <li>Electronics</li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h2>Product Title</h2>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h2>Product Title</h2>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>

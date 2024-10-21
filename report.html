@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Crime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crime Awareness & Reporting</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="report.html">Report a Crime</a>
+            <a href="reports.html">View Reports</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Report a Crime</h2>
+            <form id="crime-report-form">
+                <label for="crime-type">Crime Type:</label>
+                <select id="crime-type" name="crime-type" required>
+                    <option value="Theft">Theft</option>
+                    <option value="Assault">Assault</option>
+                    <option value="Vandalism">Vandalism</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="anonymous">
+                    <input type="checkbox" id="anonymous" name="anonymous">
+                    Report Anonymously
+                </label>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crime Awareness & Reporting</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
